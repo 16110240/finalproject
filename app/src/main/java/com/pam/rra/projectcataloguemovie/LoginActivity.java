@@ -11,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.pam.rra.projectcataloguemovie.Db.DatabaseHelper;
-
 import java.net.URL;
 
 public class LoginActivity extends AppCompatActivity {
@@ -22,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     String EmailHolder, PasswordHolder;
     Boolean EditTextEmptyHolder;
     SQLiteDatabase sqLiteDatabaseObj;
-    DatabaseHelper sqLiteHelper;
+    SQLiteHelper sqLiteHelper;
     Cursor cursor;
     String TempPassword = "NOT_FOUND" ;
     String UserName;
@@ -42,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         Email = (EditText)findViewById(R.id.editEmail);
         Password = (EditText)findViewById(R.id.editPassword);
 
-        sqLiteHelper = new DatabaseHelper(this);
+        sqLiteHelper = new SQLiteHelper(this);
 
         //Adding click listener to log in button.
         LogInButton.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
             sqLiteDatabaseObj = sqLiteHelper.getWritableDatabase();
 
             // Adding search email query to cursor.
-            cursor = sqLiteDatabaseObj.query(DatabaseHelper.TABLE_NAME, null, " " + DatabaseHelper.Table_Column_2_Email + "=?", new String[]{EmailHolder}, null, null, null);
+            cursor = sqLiteDatabaseObj.query(SQLiteHelper.TABLE_NAME, null, " " + SQLiteHelper.Table_Column_2_Email + "=?", new String[]{EmailHolder}, null, null, null);
 
             while (cursor.moveToNext()) {
 
@@ -90,8 +88,8 @@ public class LoginActivity extends AppCompatActivity {
                     cursor.moveToFirst();
 
                     // Storing Password associated with entered email.
-                    TempPassword = cursor.getString(cursor.getColumnIndex(DatabaseHelper.Table_Column_3_Password));
-                    UserName=cursor.getString(cursor.getColumnIndex(DatabaseHelper.Table_Column_1_Name));
+                    TempPassword = cursor.getString(cursor.getColumnIndex(SQLiteHelper.Table_Column_3_Password));
+                    UserName=cursor.getString(cursor.getColumnIndex(SQLiteHelper.Table_Column_1_Name));
 
                     // Closing cursor.
                     cursor.close();
