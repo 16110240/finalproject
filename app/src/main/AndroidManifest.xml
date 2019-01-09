@@ -3,7 +3,7 @@
     package="com.pam.rra.projectcataloguemovie">
 
     <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< Updated upstream
+
 
     <permission
         android:name="com.pam.rra.projectcataloguemovie.READ_DATABASE"
@@ -45,7 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< Updated upstream
+
         <activity
             android:name=".DetailMovieActivity"
             android:theme="@style/AppTheme.SplashScreen" />
@@ -65,20 +65,9 @@
             android:name=".Category.FavoriteActivity"
             android:label="Favorite Movies" />
 
-        <activity android:name=".RegisterActivity"></activity>
-=======
-        <activity android:name="com.pam.rra.projectcataloguemovie.DetailMovieActivity"
-            android:theme="@style/AppTheme.SplashScreen"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.MostPopularActivity"
-            android:label="Most Popular Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.NowPlayingActivity"
-            android:label="Now Playing Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.TopRatedActivity"
-            android:label="Top Rated Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.UpComingActivity"
-            android:label="Up Coming Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.FavoriteActivity"
-            android:label="Favorite Movies"/>
+        <activity android:name=".RegisterActivity"/>
+
+
         <activity android:name="com.pam.rra.projectcataloguemovie.AlarmFilm"
             android:label="Alarm Movie"/>
         <receiver
