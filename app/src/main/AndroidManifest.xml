@@ -27,7 +27,7 @@
 
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:label="Catalogue Movie"
             android:theme="@style/AppTheme.SplashScreen">
             <intent-filter>
