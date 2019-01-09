@@ -29,7 +29,7 @@ import static com.pam.rra.projectcataloguemovie.Db.DatabaseContract.FavoriteColu
 public class DetailMovieActivity extends AppCompatActivity {
 
     String img, judul, desc, tgl;
-    ImageView tvImg;
+    ImageView tvImg,alImg;
     FloatingActionButton fvFav;
     TextView tvJudul, tvDesc, tvTgl;
     CoordinatorLayout coordinatorLayout;
@@ -49,6 +49,7 @@ public class DetailMovieActivity extends AppCompatActivity {
         tvDesc = findViewById(R.id.desc);
         tvTgl = findViewById(R.id.tgl);
         fvFav = findViewById(R.id.love);
+        alImg= findViewById(R.id.alImg);
         coordinatorLayout = findViewById(R.id.coordinatorLayout);
 
 
@@ -59,6 +60,15 @@ public class DetailMovieActivity extends AppCompatActivity {
         toolbar.setTitle("Detail Movie");
         setSupportActionBar(toolbar);
         if(getSupportActionBar() != null)getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        alImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(DetailMovieActivity.this, AlarmFilm.class);
+                i.putExtra("title", judul);
+                startActivity(i);
+            }
+        });
 
     }
 
