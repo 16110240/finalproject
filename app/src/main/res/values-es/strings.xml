@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Base de datos de tareas Catálogo de películas</string>
+    <string name="navigation_drawer_open">Abre el cajón de navegación</string>
+    <string name="navigation_drawer_close">cerrar el cajon de navegacion</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="most_popular">Más popular</string>
+    <string name="up_coming">Entrar en</string>
+    <string name="top_rated">Valor superior</string>
+    <string name="favorite">Favoritos</string>
+    <string name="share">Compartirlo</string>
+    <string name="movie_date">fecha de la película</string>
+    <string name="search">Búsqueda</string>
+    <string name="movie_name">Nombre de la película</string>
+    <string name="movie_description">Descripción de la película</string>
+    <string name="detail_movies">Detalles de la pelicula</string>
+    <string name="ganti_bahasa">Cambiar idioma</string>
+    <string name="now_playing">Siendo jugado</string>
+    <string name="email">rifafauzi6@gmail.com</string>
+    <string name="nama">R Rifa Fauzi Komara</string>
+</resources>

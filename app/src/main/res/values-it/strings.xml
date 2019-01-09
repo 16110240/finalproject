@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task Database Film Catalog</string>
+    <string name="navigation_drawer_open">Apri il pannello di navigazione</string>
+    <string name="navigation_drawer_close">Chiudi il cassetto di navigazione</string>
+    <string name="action_settings">regolazione</string>
+    <string name="most_popular">Il più popolare</string>
+    <string name="up_coming">Vieni dentro</string>
+    <string name="top_rated">Valore superiore</string>
+    <string name="favorite">favorito</string>
+    <string name="share">Condividilo</string>
+    <string name="movie_date">Data del film</string>
+    <string name="search">cercare</string>
+    <string name="movie_name">Nome del film</string>
+    <string name="movie_description">Descrizione del film</string>
+    <string name="detail_movies">Dettagli del film</string>
+    <string name="ganti_bahasa">Cambia lingua</string>
+    <string name="now_playing">Essere giocati</string>
+    <string name="email">rifafauzi6@gmail.com</string>
+    <string name="nama">R Rifa Fauzi Komara</string>
+</resources>

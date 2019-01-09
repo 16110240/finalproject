@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tugas Katalog Film Basis Data</string>
+    <string name="navigation_drawer_open">Buka laci navigasi</string>
+    <string name="navigation_drawer_close">Tutup laci navigasi</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="most_popular">Paling Poluler</string>
+    <string name="up_coming">Datang</string>
+    <string name="top_rated">Nilai Tertinggi</string>
+    <string name="favorite">Favorit</string>
+    <string name="share">Bagikan</string>
+    <string name="movie_date">Tanggal Filme</string>
+    <string name="search">Cari</string>
+    <string name="movie_name">Nama Film</string>
+    <string name="movie_description">Deskripsi film</string>
+    <string name="detail_movies">Detail film</string>
+    <string name="ganti_bahasa">Ganti Bahasa</string>
+    <string name="now_playing">Sedang Dimainkan</string>
+    <string name="email">rifafauzi6@gmail.com</string>
+    <string name="nama">R Rifa Fauzi Komara</string>
+</resources>
