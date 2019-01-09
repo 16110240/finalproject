@@ -15,6 +15,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static String DATABASE_NAME = "db_favorite";
 
+    public static final String TABLE_NAME="User";
+
+    public static final String Table_Column_ID="id";
+
+    public static final String Table_Column_1_Name="name";
+
+    public static final String Table_Column_2_Email="email";
+
+    public static final String Table_Column_3_Password="password";
+
     private static final int DATABASE_VERSION = 1;
 
     private static final String SQL_CREATE_TABLE_FAVORITE = String.format("CREATE TABLE %s"
@@ -38,11 +48,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_TABLE_FAVORITE);
+        String CREATE_TABLE="CREATE TABLE IF NOT EXISTS "+TABLE_NAME+" ("+Table_Column_ID+" INTEGER PRIMARY KEY, "+Table_Column_1_Name+" VARCHAR, "+Table_Column_2_Email+" VARCHAR, "+Table_Column_3_Password+" VARCHAR)";
+        db.execSQL(CREATE_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ TABLE_FAVORITE);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
         onCreate(db);
     }
 }

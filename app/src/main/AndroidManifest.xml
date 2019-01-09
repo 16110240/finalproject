@@ -2,13 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pam.rra.projectcataloguemovie">
 
-
-
     <uses-permission android:name="android.permission.INTERNET" />
-    <permission android:name="com.pam.rra.projectcataloguemovie.READ_DATABASE"
-        android:protectionLevel="normal"/>
-    <permission android:name="com.pam.rra.projectcataloguemovie.WRITE_DATABASE"
-        android:protectionLevel="normal"/>
+
+    <permission
+        android:name="com.pam.rra.projectcataloguemovie.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.pam.rra.projectcataloguemovie.WRITE_DATABASE"
+        android:protectionLevel="normal" />
 
     <application
         android:allowBackup="true"
@@ -18,13 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <provider
-            android:name="com.pam.rra.projectcataloguemovie.provider.FavoriteProvider"
+            android:name=".provider.FavoriteProvider"
             android:authorities="com.pam.rra.projectcataloguemovie"
             android:exported="true"
             android:readPermission="com.pam.rra.projectcataloguemovie.READ_DATABASE"
             android:writePermission="com.pam.rra.projectcataloguemovie.WRITE_DATABASE" />
+
+
         <activity
-            android:name="com.pam.rra.projectcataloguemovie.MainActivity"
+            android:name=".LoginActivity"
             android:label="Catalogue Movie"
             android:theme="@style/AppTheme.SplashScreen">
             <intent-filter>
@@ -33,18 +36,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.pam.rra.projectcataloguemovie.DetailMovieActivity"
-            android:theme="@style/AppTheme.SplashScreen"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.MostPopularActivity"
-            android:label="Most Popular Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.NowPlayingActivity"
-            android:label="Now Playing Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.TopRatedActivity"
-            android:label="Top Rated Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.UpComingActivity"
-            android:label="Up Coming Movies"/>
-        <activity android:name="com.pam.rra.projectcataloguemovie.Category.FavoriteActivity"
-            android:label="Favorite Movies"/>
+        <activity
+            android:name=".DetailMovieActivity"
+            android:theme="@style/AppTheme.SplashScreen" />
+        <activity
+            android:name=".Category.MostPopularActivity"
+            android:label="Most Popular Movies" />
+        <activity
+            android:name=".Category.NowPlayingActivity"
+            android:label="Now Playing Movies" />
+        <activity
+            android:name=".Category.TopRatedActivity"
+            android:label="Top Rated Movies" />
+        <activity
+            android:name=".Category.UpComingActivity"
+            android:label="Up Coming Movies" />
+        <activity
+            android:name=".Category.FavoriteActivity"
+            android:label="Favorite Movies" />
+
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
