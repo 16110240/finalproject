@@ -3,6 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/activity_main"
 android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
 android:layout_height="match_parent"
 android:paddingBottom="16dp"
 android:paddingLeft="16dp"
@@ -14,23 +15,27 @@ tools:context=".LoginActivity">
     android:id="@+id/textView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
     android:gravity="center"
-    android:text="User Login "
-    android:textColor="#000"
-    android:textSize="20dp" />
+    android:text="@string/user_login"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:layout_marginTop="50dp"
+    android:textSize="50dp" />
 
 <EditText
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:inputType="textEmailAddress"
-    android:hint="Enter Email"
+    android:hint="Email"
     android:textColor="#000"
     android:ems="10"
     android:layout_below="@+id/textView"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="190dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/edit_login"
     android:id="@+id/editEmail"
     android:gravity="center"/>
 
@@ -38,9 +43,12 @@ tools:context=".LoginActivity">
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:inputType="textPassword"
-    android:hint="Enter Password"
+    android:hint="Password"
     android:textColor="#000"
     android:ems="10"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/edit_login"
     android:layout_below="@+id/editEmail"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"
@@ -53,14 +61,20 @@ tools:context=".LoginActivity">
     android:id="@+id/buttonLogin"
     android:layout_below="@+id/editPassword"
     android:layout_marginTop="20dp"
-    android:text="Log IN "/>
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/editbuttonlogin"
+    android:text="@string/login"/>
 
 <Button
     android:id="@+id/buttonRegister"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/buttonLogin"
-    android:layout_marginTop="20dp"
-    android:text="REGISTER" />
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/editbuttonlogin"
+    android:text="@string/register" />
 
 </RelativeLayout>

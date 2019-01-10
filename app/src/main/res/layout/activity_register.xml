@@ -5,6 +5,7 @@ android:id="@+id/activity_register"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:paddingBottom="16dp"
+    android:background="@color/colorPrimary"
 android:paddingLeft="16dp"
 android:paddingRight="16dp"
 android:paddingTop="16dp"
@@ -13,12 +14,13 @@ tools:context=".RegisterActivity">
     android:id="@+id/textView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
     android:layout_centerHorizontal="true"
     android:gravity="center"
-    android:text="User Sign Up"
-    android:textColor="#000"
-    android:textSize="20dp" />
+    android:text="@string/user_sign_up"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold"
+    android:textSize="50dp" />
 
 <EditText
     android:layout_width="fill_parent"
@@ -29,7 +31,10 @@ tools:context=".RegisterActivity">
     android:ems="10"
     android:layout_below="@+id/textView"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/edit_login"
     android:id="@+id/editName"
     android:gravity="center"/>
 
@@ -43,6 +48,9 @@ tools:context=".RegisterActivity">
     android:layout_below="@+id/editName"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/edit_login"
     android:id="@+id/editEmail"
     android:gravity="center"/>
 
@@ -56,6 +64,9 @@ tools:context=".RegisterActivity">
     android:layout_below="@+id/editEmail"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/edit_login"
     android:id="@+id/editPassword"
     android:gravity="center"/>
 
@@ -64,7 +75,10 @@ tools:context=".RegisterActivity">
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/editPassword"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/editbuttonlogin"
     android:text="REGISTER" />
 
 </RelativeLayout>
