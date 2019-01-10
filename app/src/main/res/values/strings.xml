@@ -26,5 +26,9 @@
     <string name="set_repeating_alarm">Set Repeating Alarm</string>
     <string name="batalkan_alarm">Batalkan Alarm</string>
     <string name="waktu_alarm">Waktu Alarm</string>
+    <string name="user_login">User Login</string>
+    <string name="login">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="user_sign_up">User Sign Up</string>
 
 </resources>
